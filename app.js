@@ -38,7 +38,7 @@ app.use(cors());
 
 app.use('/', routes);
 app.use('/users', users);
-//app.use('/growls', jwtCheck);
+app.use('/growls', jwtCheck);
 app.use('/growls', growls);
 
 // catch 404 and forward to error handler
